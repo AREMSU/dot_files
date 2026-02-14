@@ -1,0 +1,108 @@
+@define-color text            #2a1b2e;
+@define-color background-alt  #f2e1d9;
+@define-color selected        #ff69b4;
+@define-color hover           #ffb3d9;
+@define-color urgent          #ff1493;
+
+* {
+  color: @text;
+  all: unset;
+  font-size: 14px;
+  font-family: "JetBrains Mono Nerd Font 10";
+  transition: 200ms;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.floating-notifications.background .notification-row .notification-background {
+  background: linear-gradient(135deg, rgba(242, 225, 217, 0.85) 0%, rgba(242, 225, 217, 0.9) 100%);
+  box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.3);
+  border: 2px solid rgba(255, 182, 193, 0.6);
+  border-radius: 24px;
+  margin: 16px;
+  padding: 0;
+  backdrop-filter: blur(10px);
+}
+
+.floating-notifications.background .notification-row .notification-background .notification {
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification.critical {
+  border: 2px solid @urgent;
+  box-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+}
+
+.floating-notifications.background .notification-row .notification-background .notification .notification-content {
+  margin: 14px;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * {
+  min-height: 3.4em;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(242, 225, 217, 0.8) 0%, rgba(242, 225, 217, 0.9) 100%);
+  margin: 6px;
+  border: 1px solid rgba(255, 182, 193, 0.5);
+}
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff85c1 100%);
+  border: 1px solid #ff69b4;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
+  background: @selected;
+  color: white;
+}
+
+.image {
+  margin: 10px 20px 10px 0px;
+  border-radius: 12px;
+}
+
+.summary {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #2a1b2e;
+}
+
+.body {
+  font-size: 0.8rem;
+  color: #4a3b4e;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button {
+  margin: 6px;
+  padding: 2px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(242, 225, 217, 0.8) 0%, rgba(242, 225, 217, 0.9) 100%);
+  border: 1px solid rgba(255, 182, 193, 0.5);
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:hover {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff85c1 100%);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:active {
+  background: @selected;
+  color: white;
+}
+
+.notification.critical progress {
+  background-color: #ff69b4;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: #ffb3d9;
+}
