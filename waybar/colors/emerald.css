@@ -1,0 +1,33 @@
+@define-color bg0 #1a3d2e;
+@define-color foreground #e8f5f0;
+@define-color background #1a3d2e;
+@define-color color0     #0e2a1e;
+@define-color color8     #2a5a42;
+@define-color color1     #8a3a2a;  /* warm red for urgent */
+@define-color color9     #aa5a3a;
+@define-color color2     #3aaa7a;  /* mint green */
+@define-color color10    #5acaa0;
+@define-color color3     #c8943a;  /* golden hour */
+@define-color color11    #e0b458;
+@define-color color4     #4a8aaa;  /* sky blue */
+@define-color color12    #6aaace;
+@define-color color5     #7a5a8a;  /* soft purple */
+@define-color color13    #9a7aaa;
+@define-color color6     #3aaa7a;
+@define-color color14    #6acaaa;
+@define-color color7     #5a8a72;
+@define-color color15    #e8f5f0;
+
+/* Jade theme – celadon and mint pulled from biggubs wallpaper */
+@define-color celadon     #e8f5f0; /* Pale celadon – pill background */
+@define-color jade_border #b8ddd0; /* Muted jade – borders */
+@define-color deep_jade   #1a3d2e; /* Deep forest green – text */
+@define-color mint_accent #3aaa7a; /* Bright mint from the car – active/accents */
+@define-color golden_hour #c8943a; /* Warm gold from lighting – notification accent */
+
+/* Aliases matching variable names in style.css */
+@define-color beige_pink  @celadon;
+@define-color soft_clay   @jade_border;
+@define-color espresso    @deep_jade;
+@define-color muted_gold  @mint_accent;
+@define-color moss_green  @golden_hour;
