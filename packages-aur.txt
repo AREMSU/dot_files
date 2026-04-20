@@ -1,0 +1,11 @@
+brave-bin 1:1.85.118-1
+grimblast-git r153.41dbcac-1
+openssl-1.1 1.1.1.w-2
+spotify 1:1.2.79.425-1
+ttf-ms-fonts 2.0-12
+viber 24.9.0.3-1
+vscodium-bin 1.107.18627-1
+whatsapp-for-linux-git 1.7.0.r7.ga2d3732-1
+yay 12.5.7-1
+yay-debug 12.5.7-1
+zoom 6.7.2-1
