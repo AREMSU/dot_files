@@ -1,0 +1,33 @@
+@define-color bg0 #0d2b2e;
+@define-color foreground #e0faf8;
+@define-color background #0d2b2e;
+@define-color color0     #071a1c;
+@define-color color8     #1a4a50;
+@define-color color1     #c0392b;  /* red pulled from wallpaper – used for urgent */
+@define-color color9     #e05c4b;
+@define-color color2     #2a9d8f;
+@define-color color10    #52d9cc;
+@define-color color3     #d4a96a;
+@define-color color11    #f5dba0;
+@define-color color4     #3a8fb5;
+@define-color color12    #6abede;
+@define-color color5     #7a6eaf;
+@define-color color13    #a89ece;
+@define-color color6     #52d9cc;
+@define-color color14    #a8e6e0;
+@define-color color7     #7fbfba;
+@define-color color15    #e0faf8;
+
+/* Teal/cyan theme – complements bold red wallpaper */
+@define-color frost_base  #e0faf8; /* Near-white with cool teal tint – pill backgrounds */
+@define-color teal_shadow #1a4a50; /* Deep teal – borders and accents */
+@define-color deep_abyss  #0d2b2e; /* Very dark teal – text, maximum contrast */
+@define-color cyan_glow   #52d9cc; /* Bright cyan – active workspace, module accents */
+@define-color ember_gold  #d4a96a; /* Warm gold pulled from armor – notification accent */
+
+/* Aliases matching the variable names used in style.css */
+@define-color beige_pink  @frost_base;
+@define-color soft_clay   @teal_shadow;
+@define-color espresso    @deep_abyss;
+@define-color muted_gold  @cyan_glow;
+@define-color moss_green  @ember_gold;

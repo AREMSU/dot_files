@@ -1,0 +1,33 @@
+@define-color bg0 #1c1a17;
+@define-color foreground #e8dfc8;
+@define-color background #1c1a17;
+@define-color color0     #0e0d0b;
+@define-color color8     #3a3528;
+@define-color color1     #8a3a2a;  /* deep red from background – urgent */
+@define-color color9     #a84a38;
+@define-color color2     #7a8c6e;  /* moss/olive from armor */
+@define-color color10    #9aac8e;
+@define-color color3     #b89a5a;  /* warm gold from chains/ornaments */
+@define-color color11    #d4b878;
+@define-color color4     #6a7a8a;  /* cold steel blue-grey */
+@define-color color12    #8a9aaa;
+@define-color color5     #7a6a5a;  /* leather brown */
+@define-color color13    #9a8a7a;
+@define-color color6     #8a9a7a;  /* sage from cloaks */
+@define-color color14    #aabaa8;
+@define-color color7     #6a6258;
+@define-color color15    #e8dfc8;
+
+/* Knights theme – colors pulled from the artwork itself */
+@define-color iron_dark   #1c1a17; /* Near-black with warm undertone – pill background */
+@define-color iron_border #3a3528; /* Dark warm grey – pill borders */
+@define-color parchment   #e8dfc8; /* Aged bone white – text */
+@define-color armor_gold  #b89a5a; /* Warm gold from chains – active/accents */
+@define-color moss_armor  #7a8c6e; /* Olive green from armor – notification accent */
+
+/* Aliases matching variable names in style.css */
+@define-color beige_pink  @iron_dark;
+@define-color soft_clay   @iron_border;
+@define-color espresso    @parchment;
+@define-color muted_gold  @armor_gold;
+@define-color moss_green  @moss_armor;

@@ -1,4 +1,5 @@
 {
+    "style": "/home/aremsu/.config/waybar/style-active.css",
     "position": "top",
     "margin-top": 10,
     "margin-right": 5,

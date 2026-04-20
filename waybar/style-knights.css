@@ -1,0 +1,124 @@
+@import 'colors/knights.css';
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+tooltip {
+    background: @beige_pink;
+    border: 2px solid @soft_clay;
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: @espresso;
+    padding: 6px;
+}
+
+#workspaces {
+    background-color: @beige_pink;
+    padding: 5px 3px;
+    margin: 0 0 0 12px;
+    border-radius: 18px;
+    border: 1px solid @soft_clay;
+    color: @espresso;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 50px;
+    color: transparent;
+    background-color: @soft_clay;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background-color: @muted_gold;
+    color: @beige_pink;
+    min-width: 50px;
+    transition: all 0.3s ease-in-out;
+    font-size: 13px;
+}
+
+#workspaces button:hover {
+    background-color: @muted_gold;
+    color: @beige_pink;
+    border-radius: 16px;
+    min-width: 50px;
+}
+
+#workspaces button.urgent {
+    background-color: @color1;
+    color: @espresso;
+    border-radius: 16px;
+    min-width: 50px;
+}
+
+#tray {
+    background-color: @beige_pink;
+    padding: 0 15px 0 15px;
+    margin: 0 12px 0 12px;
+    border-radius: 50px;
+    border: 1px solid @soft_clay;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @color1;
+    border-radius: 12px;
+}
+
+#tray menu {
+    background: @beige_pink;
+    border: 1px solid @soft_clay;
+    color: @espresso;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#custom-notification {
+    background-color: @beige_pink;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 12px;
+    border-radius: 50px;
+    border: 1px solid @soft_clay;
+}
+
+#clock {
+    color: @muted_gold;
+}
+
+#custom-notification {
+    color: @moss_green;
+}
+
+#pulseaudio {
+    color: @muted_gold;
+}
+
+#network {
+    color: @muted_gold;
+}
+
+#battery {
+    color: @muted_gold;
+}
